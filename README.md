@@ -12,6 +12,8 @@
 
 ![项目首页](./docs/screenshots/01-home.png)
 
+![步骤二界面](./docs/screenshots/02-editor.png)
+
 ## 产出案例
 
 [查看在线案例](https://giovannixujingran-bit.github.io/ai-report-automation-demo/report-preview.html)
