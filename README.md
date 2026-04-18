@@ -10,11 +10,9 @@
 
 ## 项目截图
 
-将截图放到 `docs/screenshots/` 目录后，README 会直接展示：
+首页图放在 `docs/screenshots/` 目录后，README 会直接展示：
 
 ![项目首页](./docs/screenshots/01-home.png)
-
-![编辑界面](./docs/screenshots/02-editor.png)
 
 [查看报告预览 HTML](https://giovannixujingran-bit.github.io/ai-report-automation-demo/report-preview.html)
 
