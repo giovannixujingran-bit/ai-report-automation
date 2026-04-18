@@ -16,7 +16,7 @@
 
 ![编辑界面](./docs/screenshots/02-editor.png)
 
-![报告预览](./docs/screenshots/03-preview.png)
+[查看报告预览 HTML](https://giovannixujingran-bit.github.io/ai-report-automation-demo/report-preview.html)
 
 ## 项目价值
 

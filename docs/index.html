@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 报告自动化工作流系统</title>
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --panel: rgba(255, 255, 255, 0.82);
+      --line: rgba(32, 25, 15, 0.12);
+      --text: #20190f;
+      --muted: #6a6258;
+      --accent: #8d6b3f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(186, 156, 112, 0.16), transparent 28%),
+        linear-gradient(180deg, #f8f4ec 0%, var(--bg) 100%);
+    }
+
+    main {
+      width: min(1080px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 72px 0 96px;
+    }
+
+    .hero {
+      margin-bottom: 28px;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(36px, 7vw, 68px);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+    }
+
+    .intro {
+      max-width: 720px;
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      padding: 28px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 24px 60px rgba(32, 25, 15, 0.08);
+    }
+
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 24px;
+    }
+
+    .card p {
+      margin: 0 0 20px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 12px 18px;
+      border: 1px solid rgba(141, 107, 63, 0.32);
+      text-decoration: none;
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    a.button:hover {
+      background: #fffaf2;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">AI REPORT AUTOMATION</p>
+      <h1>AI 报告自动化工作流系统</h1>
+      <p class="intro">这是公开演示站点入口。这里展示脱敏后的报告预览页面结构，用于说明如何把多页报告编辑、页面模板、预览和导出串成统一工作流。</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>报告预览</h2>
+        <p>查看单独导出的 HTML 预览页。你后续可以直接替换成真实的公开版报告样例。</p>
+        <a class="button" href="./report-preview.html">打开预览页</a>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
