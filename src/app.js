@@ -710,7 +710,7 @@ const CURRENT_VERSION = "v2.3.0";
 
 const translations = {
     zh: {
-        brand: { title: "AI 报告系统", version: `公开演示版 ${CURRENT_VERSION}` },
+        brand: { title: "AI 报告系统", version: `公开版 ${CURRENT_VERSION}` },
         sidebar: {
             reportLabel: "报告类型:",
             languageLabel: "界面语言:",
@@ -752,7 +752,7 @@ const translations = {
         }
     },
     en: {
-        brand: { title: "AI Report System", version: `${CURRENT_VERSION} demo build` },
+        brand: { title: "AI Report System", version: `${CURRENT_VERSION} public build` },
         sidebar: {
             reportLabel: "Report Type:",
             languageLabel: "UI Language:",
@@ -6519,7 +6519,7 @@ function renderStep2() {
             }
             const payloadText = minifyJson({
                 schema_version: "2.0",
-                product: "AI Report Demo",
+                product: "AI Report System",
                 created_at: state.reportIntermediate.created_at || new Date().toISOString(),
                 chapters: (state.reportIntermediate.chapters || [])
             });
@@ -6561,7 +6561,7 @@ function renderStep2() {
 
                 // 2. 用 AI 的新数据覆盖文本字段
                 schema_version: parsed.schema_version || "2.0",
-                product: parsed.product || "AI Report Demo",
+                product: parsed.product || "AI Report System",
                 report_title: parsed.report_title || "",
                 report_subtitle: parsed.report_subtitle || "",
                 introduction_paragraph: parsed.introduction_paragraph || "",

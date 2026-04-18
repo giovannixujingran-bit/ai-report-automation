@@ -1,6 +1,6 @@
 # AI 报告自动化工作流系统
 
-脱敏后的公开演示版，展示如何把原本依赖人工串联的报告制作流程，重构为端到端 AI 工作流。
+脱敏后的公开版本，展示如何把原本依赖人工串联的报告制作流程，重构为端到端 AI 工作流。
 
 ## 项目概述
 
@@ -16,7 +16,7 @@
 
 ## 产出案例
 
-[查看在线案例](https://giovannixujingran-bit.github.io/ai-report-automation-demo/report-preview.html)
+[查看在线案例](https://giovannixujingran-bit.github.io/ai-report-automation/report-preview.html)
 
 ## 项目价值
 
@@ -49,21 +49,31 @@
 src/
   app.js                  # 主交互逻辑
   api/                    # 请求层
-  config/                 # 报告结构、映射与运行时配置
+  config/                 # 报告结构、映射与运行时配置（env.js 本地生成，不入库）
   services/               # 模板、草稿、上传等服务
   styles/                 # 样式
+  i18n/                   # 多语言文案
 
-templates/
-  主题-风格企划模板.html
+templates/                # 各类报告 HTML 模板
+  accessories_v1.24.html
+  detail_v1.24.html
+  pattern_v1.0.html
+  silhouette_v1.24.html
   主题-主题企划模板.html
+  主题-风格企划模板.html
+
+docs/                     # GitHub Pages 发布目录（在线案例与截图）
+prompts/                  # 提示词目录（公开版仅保留说明）
+workflow/                 # 工作流目录（公开版仅保留说明）
 
 config.js                 # 报告类型与章节结构配置
 index.html                # 应用入口
+version.json              # 版本信息
 ```
 
 ## 本地查看
 
-这个仓库以公开演示为主，可以直接作为静态前端项目查看。
+这个仓库是脱敏后的公开版本，可以直接作为静态前端项目查看。
 
 - 使用任意静态服务器打开项目目录即可
 - 如需接入你自己的 AI 服务，可补充 `src/config/env.js`
